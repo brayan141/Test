@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "T7Fm9RIOSx1lr+la3eNpFPKAiuvTYwnnCpVbtwOxW9I=",
+  "Source": "IdentityMS",
+  "BasePath": "_content/IdentityMS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

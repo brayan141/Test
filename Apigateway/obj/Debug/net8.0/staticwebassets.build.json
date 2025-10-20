@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "HC+4X0bERYggxydbxQCXAtLFkJIQqZLzg9bjxXrp4cI=",
+  "Source": "Apigateway",
+  "BasePath": "_content/Apigateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

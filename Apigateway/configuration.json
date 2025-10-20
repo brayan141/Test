@@ -1,0 +1,68 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{Controller}/{Method}",
+      "DownstreamScheme": "http",
+      //"DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          //"Host": "api.softnova.com.co",
+          "Host": "localhost",
+          //"Port": 5091
+          "Port": 5012
+        }
+      ],
+      "UpstreamPathTemplate": "/UserMS/{Controller}/{Method}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DelegatingHandlers": [ "BypassSslValidationHandler" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "UserMS" ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{Controller}/{Method}",
+      "DownstreamScheme": "http",
+      //"DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          //"Host": "api.softnova.com.co",
+          "Host": "localhost",
+          //"Port": 5092
+          "Port": 5013
+        }
+      ],
+      "UpstreamPathTemplate": "/LocationMS/{Controller}/{Method}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DelegatingHandlers": [ "BypassSslValidationHandler" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "LocationMS" ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{Controller}/{Method}",
+      "DownstreamScheme": "http",
+      //"DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          //"Host": "api.softnova.com.co",
+          "Host": "localhost",
+          //"Port": 5092
+          "Port": 5014
+        }
+      ],
+      "UpstreamPathTemplate": "/InventoryMS/{Controller}/{Method}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DelegatingHandlers": [ "BypassSslValidationHandler" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "InventoryMS" ]
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    //"BaseUrl": "http://localhost:5047"
+    "BaseUrl": "https://api.softnova.com.co:5010"
+  }
+}
